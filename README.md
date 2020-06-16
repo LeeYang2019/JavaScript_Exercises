@@ -16,3 +16,8 @@ Exercise 08 - Fun with HTML5 Canvas
 - worked with addEventListeners
 - worked with events
 - worked with flags
+
+Exercise 09 - 14 Must Know Dev Tools Tricks
+
+- learned how to use different console functions, such as console.warning, console.error, and console.table.
+- learned how to use console.time and console.timeEnd to time different program processes.
