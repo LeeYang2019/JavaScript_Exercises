@@ -60,6 +60,47 @@
       console.table(comments);
 
       const newComments = [...comments];
+
+      state = {
+        formError: false,
+        formSuccess: '',
+        formData: {
+          email: {
+            element: 'input',
+            value: '',
+            config: {
+              name: 'email_input',
+              type: 'email',
+              placeholder: 'Enter your email',
+            },
+            validation: {
+              required: true,
+              email: true,
+            },
+            valid: false,
+            validationMessage: '',
+          },
+        },
+      };
+
+      console.log(state);
+
+      console.log(state.formData.email.config);
+
+      const {
+        formError,
+        formData: {
+          email: {
+            config,
+            config: { name, type },
+          },
+        },
+      } = state;
+
+      console.log(formError);
+      console.log(config);
+      console.log(name);
+      console.log(type);
     </script>
   </body>
 </html>
